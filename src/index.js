@@ -11,12 +11,14 @@ import { Routes } from './routes';
 
 import registerServiceWorker from './registerServiceWorker';
 
+import './styles/css/index.css';
+
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
-      <div>
+      <div className="wrapper">
         <Routes />
       </div>
     </BrowserRouter>

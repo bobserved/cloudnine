@@ -3,7 +3,7 @@ import axios from 'axios';
 const URL = 'http://localhost:3004';
 
 export const saloonListAll = () => {
-  const request = axios.get(`${URL}/saloons?_limit=6`)
+  const request = axios.get(`${URL}/saloons?_limit=12`)
                   .then(response => response.data);
   return {
     type: 'GET_SALOONS_ALL',
