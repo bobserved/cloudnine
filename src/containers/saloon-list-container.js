@@ -5,6 +5,9 @@ import { bindActionCreators } from 'redux';
 import { saloonListAll, saloonList } from '../actions';
 
 import { SaloonList } from '../components/saloon-list';
+import { Header } from '../components/header';
+
+import { IMAGES } from '../constants';
 
 class SaloonListContainer extends Component {
   componentWillMount() {
@@ -21,7 +24,13 @@ class SaloonListContainer extends Component {
   render() {
     return (
       <div>
-       <SaloonList saloons={this.props.saloons.saloonList} filter={this.filter} />
+        <Header
+          leftIcon={<img className="header__icon header__icon--rotate" src={IMAGES.RIGHT_ARROW} alt="Nav Icon" />}
+          rightIcon={<img className="header__icon" src={IMAGES.CONTROLS} alt="Filter Icon" />}
+          absolute={false}
+          title="Hår"
+        />
+        <SaloonList saloons={this.props.saloons.saloonList} filter={this.filter} />
       </div>
     );
   }

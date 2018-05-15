@@ -8,8 +8,8 @@ import { saloonDetail, resetSaloonDetail } from '../actions';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import StarRatingComponent from 'react-star-rating-component';
 
+import { Header } from '../components/header';
 import { IMAGES } from '../constants';
-
 
 class SaloonContainer extends Component {
     
@@ -74,6 +74,11 @@ class SaloonContainer extends Component {
       console.log(this.props)
         return (
           <div>
+            <Header
+              leftIcon={<img className="header__icon header__icon--rotate" src={IMAGES.RIGHT_ARROW_WHITE} alt="Nav Icon" />}
+              rightIcon={<img className="header__icon" src={IMAGES.HEART} alt="Heart Icon" />}
+              absolute={true}
+            />
             {this.saloonTemplate(this.props.saloons)}
           </div>
         );
