@@ -10,11 +10,18 @@ class SaloonListContainer extends Component {
   componentWillMount() {
     this.props.saloonListAll()
   }
+  filter = (event) => {
+    let val = event.value;
+    if(val === 'all') {
+      this.props.saloonListAll()
+    } else {
+      this.props.saloonList(val);
+    }
+}
   render() {
-    console.log(this.props);
     return (
       <div>
-       <SaloonList saloons={this.props.saloons.saloonList} />
+       <SaloonList saloons={this.props.saloons.saloonList} filter={this.filter} />
       </div>
     );
   }

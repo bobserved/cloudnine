@@ -11,8 +11,8 @@ export const saloonListAll = () => {
   }
 }
 
-export const saloonList = (keywords) => {
-  const request = axios.get(`${URL}/saloons?q=${keywords}`)
+export const saloonList = (val) => {
+  const request = axios.get(`${URL}/saloons?q=${val}`)
                   .then(response => response.data)
 
   return {
