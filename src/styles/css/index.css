@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Font Bureau - MillerBanner Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../fonts/font-bureau-millerbanner-light.otf");
+  /* IE9 Compat Modes */
+  src: local("Font Bureau - MillerBanner Light"), url("../../fonts/font-bureau-millerbanner-light.otf");
+  /* IE9 Compat Modes */ }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Font Bureau - MillerBanner Light'; }
+
+.saloon-list {
+  display: flex;
+  flex-flow: wrap;
+  padding: 0 16px; }
+  .saloon-list .saloon-item {
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid #d1d1d1;
+    text-decoration: none; }
+    .saloon-list .saloon-item__thumbnail {
+      width: 64px;
+      height: 100%;
+      border-radius: 2px;
+      background-size: cover;
+      margin-right: 16px; }
+    .saloon-list .saloon-item__mid-details {
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: column;
+      justify-content: space-between; }
+    .saloon-list .saloon-item__name {
+      color: #000000;
+      margin: 0; }
+    .saloon-list .saloon-item__address {
+      color: #999999;
+      margin: 0; }
+    .saloon-list .saloon-item__right-details {
+      display: flex;
+      align-items: center; }
+    .saloon-list .saloon-item__price-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      height: 100%; }
+    .saloon-list .saloon-item__price {
+      color: #000000;
+      font-size: 20px;
+      margin: 0; }
+    .saloon-list .saloon-item__duration {
+      color: #999999;
+      margin: 0; }
+    .saloon-list .saloon-item__arrow {
+      height: 16px;
+      margin-left: 16px; }
+    .saloon-list .saloon-item__rating {
+      display: flex;
+      margin: 8px 0; }
+      .saloon-list .saloon-item__rating .dv-star-rating {
+        align-self: start; }
+        .saloon-list .saloon-item__rating .dv-star-rating label {
+          margin-right: 4px; }
+          .saloon-list .saloon-item__rating .dv-star-rating label:first-of-type {
+            margin-right: 0px; }
+        .saloon-list .saloon-item__rating .dv-star-rating i {
+          font-size: 12px; }
+    .saloon-list .saloon-item__rating-details {
+      margin: 0;
+      margin-left: 8px;
+      color: #999999; }
+
+/*# sourceMappingURL=index.css.map */
