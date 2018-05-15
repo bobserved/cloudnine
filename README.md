@@ -12,4 +12,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live demo
 
-- ...
+- [https://jolly-carson-747f40.netlify.com/](https://jolly-carson-747f40.netlify.com/)
