@@ -5,7 +5,10 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { saloonDetail, resetSaloonDetail } from '../actions';
 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import StarRatingComponent from 'react-star-rating-component';
+
+import { IMAGES } from '../constants';
 
 
 class SaloonContainer extends Component {
@@ -33,9 +36,38 @@ class SaloonContainer extends Component {
               <p className="saloon-detail__rating-details">(32)</p>
             </div>
           </div>
-          <div className="saloon-detail_description">
-            <p>{data.saloonData[0].address}</p>
-          </div>
+          <Tabs>
+            <TabList>
+              <Tab>Info</Tab>
+              <Tab>Schema</Tab>
+            </TabList>
+            <TabPanel>
+              <div className="saloon-detail__description">
+                <div className="saloon-detail__row">
+                  <img className="saloon-detail__icon" src={IMAGES.MAP_POINTER} alt="Map Icon" />
+                  <p className="saloon-detail__text">{data.saloonData[0].address}, {data.saloonData[0].zip} {data.saloonData[0].city}</p>
+                </div>
+                <div className="saloon-detail__row">
+                  <img className="saloon-detail__icon" src={IMAGES.CLOCK} alt="Clock Icon" />
+                  <p className="saloon-detail__text">Öppet till {data.saloonData[0]["closing-hour"]} idag</p>
+                </div>
+                <div className="saloon-detail__row">
+                  <img className="saloon-detail__icon" src={IMAGES.PHONE} alt="Phone Icon" />
+                  <p className="saloon-detail__text">{data.saloonData[0].phone}</p>
+                </div>
+                <div className="saloon-detail__row">
+                  <img className="saloon-detail__icon" src={IMAGES.WEB} alt="Internet Icon" />
+                  <p className="saloon-detail__text">{data.saloonData[0].web}</p>
+                </div>
+                <div className="saloon-detail__info">
+                  <p className="saloon-detail__text">{data.saloonData[0].info}</p>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <h2>Schema</h2>
+            </TabPanel>
+          </Tabs>
       </div> ) : null
     )
     render(){
