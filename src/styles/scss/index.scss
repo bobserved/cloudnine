@@ -11,6 +11,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Font Bureau - MillerBanner Light';
+  box-sizing: border-box;
 }
 
 .saloon-list {
@@ -117,5 +118,43 @@ body {
     position: relative;
     right: 0;
     top: 0;
+  }
+}
+.saloon-detail {
+  &__background-img {
+    height: 35vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+  }
+  &__name {
+    margin: 0;
+    color: #ffffff;
+  }
+  &__rating {
+    display: flex;
+    margin: 8px 0;
+    
+    .dv-star-rating {
+      align-self: start;
+      
+      label {
+        margin-right: 4px;
+
+        &:first-of-type {
+          margin-right: 0px;
+        }
+      }
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+  &__rating-details {
+    margin: 0;
+    margin-left: 8px;
+    color: #ffffff;
   }
 }

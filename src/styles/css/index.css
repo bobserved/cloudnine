@@ -9,7 +9,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Font Bureau - MillerBanner Light'; }
+  font-family: 'Font Bureau - MillerBanner Light';
+  box-sizing: border-box; }
 
 .saloon-list {
   display: flex;
@@ -92,5 +93,31 @@ body {
     position: relative;
     right: 0;
     top: 0; }
+
+.saloon-detail__background-img {
+  height: 35vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px; }
+.saloon-detail__name {
+  margin: 0;
+  color: #ffffff; }
+.saloon-detail__rating {
+  display: flex;
+  margin: 8px 0; }
+  .saloon-detail__rating .dv-star-rating {
+    align-self: start; }
+    .saloon-detail__rating .dv-star-rating label {
+      margin-right: 4px; }
+      .saloon-detail__rating .dv-star-rating label:first-of-type {
+        margin-right: 0px; }
+    .saloon-detail__rating .dv-star-rating i {
+      font-size: 12px; }
+.saloon-detail__rating-details {
+  margin: 0;
+  margin-left: 8px;
+  color: #ffffff; }
 
 /*# sourceMappingURL=index.css.map */
