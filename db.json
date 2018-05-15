@@ -1,0 +1,28 @@
+{
+  "saloons": [
+    {
+      "id": 1,
+      "name": "Saloon 1"
+    },
+    {
+      "id": 2,
+      "name": "Saloon 2"
+    },
+    {
+      "id": 3,
+      "name": "Saloon 3"
+    },
+    {
+      "id": 4,
+      "name": "Saloon 4"
+    },
+    {
+      "id": 5,
+      "name": "Saloon 5"
+    },
+    {
+      "id": 6,
+      "name": "Saloon 6"
+    }
+  ]
+}
