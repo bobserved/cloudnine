@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
-import { SaloonContainer } from './containers/saloon-container';
+import { Routes } from './routes';
 
 ReactDOM.render(
-  <div>
-    <SaloonContainer />
-  </div>
+  <BrowserRouter>
+    <div>
+      <Routes />
+    </div>
+  </BrowserRouter>
   , document.getElementById('root'));
 registerServiceWorker();
