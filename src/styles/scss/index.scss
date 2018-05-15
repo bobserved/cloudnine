@@ -11,6 +11,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Font Bureau - MillerBanner Light';
+  box-sizing: border-box;
 }
 
 .saloon-list {
@@ -19,7 +20,6 @@ body {
   
   .saloon-item {
     display: flex;
-    flex: 0 0 100%;
     width: 100%;
     padding: 16px;
     border-bottom: 1px solid #d1d1d1;
@@ -117,5 +117,120 @@ body {
     position: relative;
     right: 0;
     top: 0;
+  }
+}
+.saloon-detail {
+  &__background-img {
+    height: 35vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+  }
+  &__name {
+    font-size: 28px;
+    margin: 0;
+    color: #ffffff;
+  }
+  &__rating {
+    display: flex;
+    margin: 8px 0;
+    
+    .dv-star-rating {
+      align-self: start;
+      
+      label {
+        margin-right: 4px;
+
+        &:first-of-type {
+          margin-right: 0px;
+        }
+      }
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+  &__rating-details {
+    margin: 0;
+    margin-left: 8px;
+    color: #ffffff;
+  }
+  &__description {
+    background-color: #ffffff;
+    padding: 16px;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f9f9f9;
+    padding: 16px 0;
+    background-color: #ffffff;
+  }
+  &__icon {
+    height: 24px;
+    margin-right: 16px;
+  }
+  &__text {
+    margin: 0;
+    color: #242424;
+  }
+  &__info {
+    padding: 20px 0 16px 0;
+    line-height:24px;
+  }
+}
+
+.react-tabs {
+  background-color: #f9f9f9;
+
+  &__tab-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  &__tab {
+    height: 100%;
+    width: 50%;
+    list-style: none;
+    text-align: center;
+    padding: 16px 0;
+    background-color: #ffffff;
+
+    &--selected {
+      border-bottom: 2px solid #b8a153;
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  box-sizing: border-box;
+
+  &--absolute {
+    position: absolute;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 24px;
+
+    &--rotate {
+      transform: rotate(180deg);
+    }
+  }
+  &__title {
+    font-size: 24px;
+    margin: 0;
   }
 }
