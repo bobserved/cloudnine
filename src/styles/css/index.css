@@ -159,6 +159,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px;
   box-sizing: border-box; }
   .header--absolute {
@@ -170,5 +171,8 @@ body {
     height: 24px; }
     .header__icon--rotate {
       transform: rotate(180deg); }
+  .header__title {
+    font-size: 24px;
+    margin: 0; }
 
 /*# sourceMappingURL=index.css.map */

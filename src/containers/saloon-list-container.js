@@ -28,6 +28,7 @@ class SaloonListContainer extends Component {
           leftIcon={<img className="header__icon header__icon--rotate" src={IMAGES.RIGHT_ARROW} alt="Nav Icon" />}
           rightIcon={<img className="header__icon" src={IMAGES.CONTROLS} alt="Filter Icon" />}
           absolute={false}
+          title="Hår"
         />
         <SaloonList saloons={this.props.saloons.saloonList} filter={this.filter} />
       </div>
