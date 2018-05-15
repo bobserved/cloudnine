@@ -14,7 +14,7 @@ class SaloonListContainer extends Component {
     console.log(this.props);
     return (
       <div>
-       <SaloonList />
+       <SaloonList saloons={this.props.saloons.saloonList} />
       </div>
     );
   }

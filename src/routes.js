@@ -8,7 +8,7 @@ export const Routes = () => {
         return(
             <Switch>
                 <Route path="/" exact component={SaloonListContainer} />
-                <Route path="/saloon/:id" exact component={SaloonContainer} />
+                <Route path="/saloons/:id" exact component={SaloonContainer} />
             </Switch>
         )
 }
