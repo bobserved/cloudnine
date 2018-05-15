@@ -13,13 +13,12 @@ body {
 
 .saloon-list {
   display: flex;
-  flex-flow: wrap;
-  padding: 0 16px; }
+  flex-flow: wrap; }
   .saloon-list .saloon-item {
     display: flex;
     flex: 0 0 100%;
     width: 100%;
-    padding: 16px 0;
+    padding: 16px;
     border-bottom: 1px solid #d1d1d1;
     text-decoration: none; }
     .saloon-list .saloon-item__thumbnail {
@@ -73,5 +72,25 @@ body {
       margin: 0;
       margin-left: 8px;
       color: #999999; }
+  .saloon-list .Dropdown-root {
+    width: 100%; }
+  .saloon-list .Dropdown-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-top: 1px solid #b8a153;
+    border-bottom: 1px solid #b8a153;
+    padding: 16px; }
+  .saloon-list .Dropdown-arrow {
+    border: none;
+    background-image: url("../../images/right-arrow.svg");
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    transform: rotate(90deg);
+    position: relative;
+    right: 0;
+    top: 0; }
 
 /*# sourceMappingURL=index.css.map */
