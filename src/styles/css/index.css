@@ -155,4 +155,20 @@ body {
     .react-tabs__tab--selected {
       border-bottom: 2px solid #b8a153; }
 
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  box-sizing: border-box; }
+  .header--absolute {
+    position: absolute; }
+  .header a {
+    display: flex;
+    align-items: center; }
+  .header__icon {
+    height: 24px; }
+    .header__icon--rotate {
+      transform: rotate(180deg); }
+
 /*# sourceMappingURL=index.css.map */

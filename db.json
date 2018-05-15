@@ -30,8 +30,8 @@
       "phone": "08-522 389 20",
       "web": "www.salongweb.com",
       "info": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet.",
-      "filter": "250-500",
-      "price": 320,
+      "filter": "0-249",
+      "price": 149,
       "currency": "kr",
       "duration": 30,
       "unit": "min"
@@ -102,8 +102,8 @@
       "phone": "08-522 389 20",
       "web": "www.salongweb.com",
       "info": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet.",
-      "filter": "250-500",
-      "price": 320,
+      "filter": "0-249",
+      "price": 149,
       "currency": "kr",
       "duration": 30,
       "unit": "min"
