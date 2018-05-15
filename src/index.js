@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
+import { Routes } from './routes';
 
-const App = () => <div># Cloudnine</div>;
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <div>
+      <Routes />
+    </div>
+  </BrowserRouter>
+  , document.getElementById('root'));
 registerServiceWorker();
