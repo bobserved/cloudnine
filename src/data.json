@@ -1,5 +1,5 @@
 {
-  "saloons": [
+  "salons": [
     {
       "id": 1,
       "name": "Sax & Fön",
@@ -110,7 +110,7 @@
     },
     {
       "id": 7,
-      "name": "Håroskopet",
+      "name": "Må Hair Sthlm",
       "address": "Rådmansgatan 46",
       "zip": "113 57",
       "city": "Stockholm",
@@ -128,7 +128,7 @@
     },
     {
       "id": 8,
-      "name": "Håroskopet",
+      "name": "Hair to Stay",
       "address": "Rådmansgatan 46",
       "zip": "113 57",
       "city": "Stockholm",
@@ -146,7 +146,7 @@
     },
     {
       "id": 9,
-      "name": "Håroskopet",
+      "name": "Hair We Are",
       "address": "Rådmansgatan 46",
       "zip": "113 57",
       "city": "Stockholm",
