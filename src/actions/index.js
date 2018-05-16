@@ -1,31 +1,31 @@
 import data from '../data.json';
 
-export const saloonListAll = () => {
+export const salonListAll = () => {
   return {
-    type: 'GET_SALOONS_ALL',
-    payload: data.saloons
+    type: 'GET_SALONS_ALL',
+    payload: data.salons
   }
 }
 
-export const saloonList = (val) => {
-  const filtered = data.saloons.filter(el => el.filter.toLowerCase().indexOf(val.toLowerCase()) > -1)
+export const salonList = (val) => {
+  const filtered = data.salons.filter(el => el.filter.toLowerCase().indexOf(val.toLowerCase()) > -1);
   return {
-    type: 'GET_SALOONS',
+    type: 'GET_SALONS',
     payload: filtered
   }
 }
 
-export const saloonDetail = (id) => {
-  const detail = data.saloons.find(e => e.id.toString() === id.toString());
+export const salonDetail = (id) => {
+  const detail = data.salons.find(e => e.id.toString() === id.toString());
   return {
-    type: 'GET_SALOON_DETAIL',
+    type: 'GET_SALON_DETAIL',
     payload: detail
   }
 }
 
-export const resetSaloonDetail = () => {
+export const resetSalonDetail = () => {
   return {
-    type: 'RESET_SALOON_DETAIL',
+    type: 'RESET_SALON_DETAIL',
     payload: null
   }
 }

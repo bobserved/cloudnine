@@ -12,69 +12,69 @@ body {
   font-family: 'Font Bureau - MillerBanner Light';
   box-sizing: border-box; }
 
-.saloon-list {
+.salon-list {
   display: flex;
   flex-flow: wrap; }
-  .saloon-list .saloon-item {
+  .salon-list .salon-item {
     display: flex;
     width: 100%;
     padding: 16px;
     border-bottom: 1px solid #d1d1d1;
     text-decoration: none; }
-    .saloon-list .saloon-item__thumbnail {
+    .salon-list .salon-item__thumbnail {
       width: 64px;
       height: 100%;
       border-radius: 2px;
       background-size: cover;
       margin-right: 16px; }
-    .saloon-list .saloon-item__mid-details {
+    .salon-list .salon-item__mid-details {
       display: flex;
       flex: 1 0 auto;
       flex-direction: column;
       justify-content: space-between; }
-    .saloon-list .saloon-item__name {
+    .salon-list .salon-item__name {
       color: #000000;
       margin: 0; }
-    .saloon-list .saloon-item__address {
+    .salon-list .salon-item__address {
       color: #999999;
       margin: 0; }
-    .saloon-list .saloon-item__right-details {
+    .salon-list .salon-item__right-details {
       display: flex;
       align-items: center; }
-    .saloon-list .saloon-item__price-details {
+    .salon-list .salon-item__price-details {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-end;
       height: 100%; }
-    .saloon-list .saloon-item__price {
+    .salon-list .salon-item__price {
       color: #000000;
       font-size: 20px;
       margin: 0; }
-    .saloon-list .saloon-item__duration {
+    .salon-list .salon-item__duration {
       color: #999999;
       margin: 0; }
-    .saloon-list .saloon-item__arrow {
+    .salon-list .salon-item__arrow {
       height: 16px;
       margin-left: 16px; }
-    .saloon-list .saloon-item__rating {
+    .salon-list .salon-item__rating {
       display: flex;
       margin: 8px 0; }
-      .saloon-list .saloon-item__rating .dv-star-rating {
+      .salon-list .salon-item__rating .dv-star-rating {
         align-self: start; }
-        .saloon-list .saloon-item__rating .dv-star-rating label {
+        .salon-list .salon-item__rating .dv-star-rating label {
           margin-right: 4px; }
-          .saloon-list .saloon-item__rating .dv-star-rating label:first-of-type {
+          .salon-list .salon-item__rating .dv-star-rating label:first-of-type {
             margin-right: 0px; }
-        .saloon-list .saloon-item__rating .dv-star-rating i {
+        .salon-list .salon-item__rating .dv-star-rating i {
           font-size: 12px; }
-    .saloon-list .saloon-item__rating-details {
+    .salon-list .salon-item__rating-details {
       margin: 0;
       margin-left: 8px;
       color: #999999; }
-  .saloon-list .Dropdown-root {
+  .salon-list .Dropdown-root {
     width: 100%; }
-  .saloon-list .Dropdown-control {
+  .salon-list .Dropdown-control {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,7 @@ body {
     border-top: 1px solid #b8a153;
     border-bottom: 1px solid #b8a153;
     padding: 16px; }
-  .saloon-list .Dropdown-arrow {
+  .salon-list .Dropdown-arrow {
     border: none;
     background-image: url("../../images/right-arrow.svg");
     width: 16px;
@@ -93,48 +93,48 @@ body {
     right: 0;
     top: 0; }
 
-.saloon-detail__background-img {
+.salon-detail__background-img {
   height: 35vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 16px; }
-.saloon-detail__name {
+.salon-detail__name {
   font-size: 28px;
   margin: 0;
   color: #ffffff; }
-.saloon-detail__rating {
+.salon-detail__rating {
   display: flex;
   margin: 8px 0; }
-  .saloon-detail__rating .dv-star-rating {
+  .salon-detail__rating .dv-star-rating {
     align-self: start; }
-    .saloon-detail__rating .dv-star-rating label {
+    .salon-detail__rating .dv-star-rating label {
       margin-right: 4px; }
-      .saloon-detail__rating .dv-star-rating label:first-of-type {
+      .salon-detail__rating .dv-star-rating label:first-of-type {
         margin-right: 0px; }
-    .saloon-detail__rating .dv-star-rating i {
+    .salon-detail__rating .dv-star-rating i {
       font-size: 16px; }
-.saloon-detail__rating-details {
+.salon-detail__rating-details {
   margin: 0;
   margin-left: 8px;
   color: #ffffff; }
-.saloon-detail__description {
+.salon-detail__description {
   background-color: #ffffff;
   padding: 16px; }
-.saloon-detail__row {
+.salon-detail__row {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f9f9f9;
   padding: 16px 0;
   background-color: #ffffff; }
-.saloon-detail__icon {
+.salon-detail__icon {
   height: 24px;
   margin-right: 16px; }
-.saloon-detail__text {
+.salon-detail__text {
   margin: 0;
   color: #242424; }
-.saloon-detail__info {
+.salon-detail__info {
   padding: 20px 0 16px 0;
   line-height: 24px; }
 
