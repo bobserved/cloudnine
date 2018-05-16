@@ -7,7 +7,7 @@ import { saloonListAll, saloonList } from '../actions';
 import { SaloonList } from '../components/saloon-list';
 import { Header } from '../components/header';
 
-import { IMAGES } from '../constants';
+import { IMAGES, FILTER } from '../constants';
 
 class SaloonListContainer extends Component {
   componentWillMount() {
@@ -22,12 +22,8 @@ class SaloonListContainer extends Component {
     }
 }
   render() {
-    const options = [
-      { value: 'all', label: 'Alla' },
-      { value: '0-249', label: 'Pris 0 - 249 kr', className: 'myOptionClassName' },
-      { value: '250-500', label: 'Pris 250 - 500 kr' }
-    ]
-    const defaultOption = options[0]
+    const options = FILTER.options;
+    const defaultOption = options[0];
     return (
       <div>
         <Header
