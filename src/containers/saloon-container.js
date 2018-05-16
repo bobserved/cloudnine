@@ -1,5 +1,4 @@
 import React,{ Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -23,9 +22,9 @@ class SaloonContainer extends Component {
       data.saloonData ? (
         <div className="saloon-detail">
           <div className="saloon-detail__background-img" style={{
-            backgroundImage:`url(${data.saloonData[0].cover})`
+            backgroundImage:`url(${data.saloonData.cover})`
           }}>
-            <h3 className="saloon-detail__name">{data.saloonData[0].name}</h3>
+            <h3 className="saloon-detail__name">{data.saloonData.name}</h3>
             <div className="saloon-detail__rating">
               <StarRatingComponent 
                 name="rate-saloon-1" 
@@ -45,22 +44,22 @@ class SaloonContainer extends Component {
               <div className="saloon-detail__description">
                 <div className="saloon-detail__row">
                   <img className="saloon-detail__icon" src={IMAGES.MAP_POINTER} alt="Map Icon" />
-                  <p className="saloon-detail__text">{data.saloonData[0].address}, {data.saloonData[0].zip} {data.saloonData[0].city}</p>
+                  <p className="saloon-detail__text">{data.saloonData.address}, {data.saloonData.zip} {data.saloonData.city}</p>
                 </div>
                 <div className="saloon-detail__row">
                   <img className="saloon-detail__icon" src={IMAGES.CLOCK} alt="Clock Icon" />
-                  <p className="saloon-detail__text">Öppet till {data.saloonData[0]["closing-hour"]} idag</p>
+                  <p className="saloon-detail__text">Öppet till {data.saloonData["closing-hour"]} idag</p>
                 </div>
                 <div className="saloon-detail__row">
                   <img className="saloon-detail__icon" src={IMAGES.PHONE} alt="Phone Icon" />
-                  <p className="saloon-detail__text">{data.saloonData[0].phone}</p>
+                  <p className="saloon-detail__text">{data.saloonData.phone}</p>
                 </div>
                 <div className="saloon-detail__row">
                   <img className="saloon-detail__icon" src={IMAGES.WEB} alt="Internet Icon" />
-                  <p className="saloon-detail__text">{data.saloonData[0].web}</p>
+                  <p className="saloon-detail__text">{data.saloonData.web}</p>
                 </div>
                 <div className="saloon-detail__info">
-                  <p className="saloon-detail__text">{data.saloonData[0].info}</p>
+                  <p className="saloon-detail__text">{data.saloonData.info}</p>
                 </div>
               </div>
             </TabPanel>
@@ -71,7 +70,6 @@ class SaloonContainer extends Component {
       </div> ) : null
     )
     render(){
-      console.log(this.props)
         return (
           <div>
             <Header

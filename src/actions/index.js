@@ -1,32 +1,25 @@
-import axios from 'axios';
-
-const URL = 'http://localhost:3004';
+import data from '../data.json';
 
 export const saloonListAll = () => {
-  const request = axios.get(`${URL}/saloons?_limit=12`)
-                  .then(response => response.data);
   return {
     type: 'GET_SALOONS_ALL',
-    payload: request
+    payload: data.saloons
   }
 }
 
 export const saloonList = (val) => {
-  const request = axios.get(`${URL}/saloons?q=${val}`)
-                  .then(response => response.data)
-
+  const filtered = data.saloons.filter(el => el.filter.toLowerCase().indexOf(val.toLowerCase()) > -1)
   return {
     type: 'GET_SALOONS',
-    payload: request
+    payload: filtered
   }
 }
 
 export const saloonDetail = (id) => {
-  const request = axios.get(`${URL}/saloons?id=${id}`)
-                  .then(response => response.data)
+  const detail = data.saloons.find(e => e.id.toString() === id.toString());
   return {
     type: 'GET_SALOON_DETAIL',
-    payload: request
+    payload: detail
   }
 }
 

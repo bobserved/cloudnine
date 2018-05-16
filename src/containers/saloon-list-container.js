@@ -22,6 +22,12 @@ class SaloonListContainer extends Component {
     }
 }
   render() {
+    const options = [
+      { value: 'all', label: 'Alla' },
+      { value: '0-249', label: 'Pris 0 - 249 kr', className: 'myOptionClassName' },
+      { value: '250-500', label: 'Pris 250 - 500 kr' }
+    ]
+    const defaultOption = options[0]
     return (
       <div>
         <Header
@@ -30,7 +36,12 @@ class SaloonListContainer extends Component {
           absolute={false}
           title="Hår"
         />
-        <SaloonList saloons={this.props.saloons.saloonList} filter={this.filter} />
+        <SaloonList
+          saloons={this.props.saloons.saloonList}
+          options={options}
+          defaultOption={defaultOption}
+          filter={this.filter}
+        />
       </div>
     );
   }
