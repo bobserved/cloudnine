@@ -64,7 +64,9 @@ class SalonContainer extends Component {
               </div>
             </TabPanel>
             <TabPanel>
-              <h2>Schema</h2>
+              <div className="salon-detail__description">
+                <h2>Schema</h2>
+              </div>
             </TabPanel>
           </Tabs>
       </div> ) : null
