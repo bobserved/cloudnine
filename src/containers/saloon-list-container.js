@@ -10,15 +10,20 @@ import { Header } from '../components/header';
 import { IMAGES, FILTER } from '../constants';
 
 class SaloonListContainer extends Component {
+  state = {
+    selected: null
+  }
   componentWillMount() {
     this.props.saloonListAll()
   }
   filter = (event) => {
     let val = event.value;
     if(val === 'all') {
-      this.props.saloonListAll()
+      this.props.saloonListAll();
+      this.setState({ selected: event });
     } else {
       this.props.saloonList(val);
+      this.setState({ selected: event });
     }
 }
   render() {
@@ -35,7 +40,7 @@ class SaloonListContainer extends Component {
         <SaloonList
           saloons={this.props.saloons.saloonList}
           options={options}
-          defaultOption={defaultOption}
+          defaultOption={this.state.selected ? this.state.selected : null}
           filter={this.filter}
         />
       </div>
