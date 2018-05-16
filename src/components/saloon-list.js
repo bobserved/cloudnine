@@ -3,18 +3,12 @@ import { SaloonListItem } from './saloon-list-item.js';
 import { Filter } from './filter';
 
 export const SaloonList = (props) => {
-    const options = [
-        { value: 'all', label: 'Alla' },
-        { value: '0-249', label: 'Pris 0 - 249 kr', className: 'myOptionClassName' },
-        { value: '250-500', label: 'Pris 250 - 500 kr' }
-      ]
-      const defaultOption = options[0]
     return (
         <div className="saloon-list">
             <Filter
-                options={options}
+                options={props.options}
                 onChange={props.filter}
-                value={defaultOption}
+                value={props.defaultOption}
                 placeholder="Filtrera"
             />
             { props.saloons && props.saloons.length > 0 ?
