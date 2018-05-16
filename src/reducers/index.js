@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { saloons } from './saloon-reducer';
+import { salons } from './salon-reducer';
 
 export const rootReducer = combineReducers({
-  saloons
+  salons
 });

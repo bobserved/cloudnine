@@ -2,27 +2,27 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { saloonListAll, saloonList } from '../actions';
+import { salonListAll, salonList } from '../actions';
 
-import { SaloonList } from '../components/saloon-list';
+import { SalonList } from '../components/salon-list';
 import { Header } from '../components/header';
 
 import { IMAGES, FILTER } from '../constants';
 
-class SaloonListContainer extends Component {
+class SalonListContainer extends Component {
   state = {
     selected: null
   }
   componentWillMount() {
-    this.props.saloonListAll()
+    this.props.salonListAll()
   }
   filter = (event) => {
     let val = event.value;
     if(val === 'all') {
-      this.props.saloonListAll();
+      this.props.salonListAll();
       this.setState({ selected: event });
     } else {
-      this.props.saloonList(val);
+      this.props.salonList(val);
       this.setState({ selected: event });
     }
 }
@@ -37,8 +37,8 @@ class SaloonListContainer extends Component {
           absolute={false}
           title="Hår"
         />
-        <SaloonList
-          saloons={this.props.saloons.saloonList}
+        <SalonList
+          salons={this.props.salons.salonList}
           options={options}
           defaultOption={this.state.selected ? this.state.selected : null}
           filter={this.filter}
@@ -50,11 +50,11 @@ class SaloonListContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    saloons: state.saloons
+    salons: state.salons
   }
 }
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ saloonListAll, saloonList }, dispatch)
+  return bindActionCreators({ salonListAll, salonList }, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SaloonListContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(SalonListContainer);
