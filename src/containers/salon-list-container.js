@@ -28,7 +28,6 @@ class SalonListContainer extends Component {
 }
   render() {
     const options = FILTER.options;
-    const defaultOption = options[0];
     return (
       <div>
         <Header
